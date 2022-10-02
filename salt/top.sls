@@ -29,7 +29,7 @@ base:
     - php.xml
     - php.soap
     - php.bcmath
-    - gitautodeploy
+    - webhook
     - supervisord
     - composer
     - backup

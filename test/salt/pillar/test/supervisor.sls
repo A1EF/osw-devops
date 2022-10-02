@@ -10,5 +10,3 @@ supervisor:
   programs:
     opensourcewebsite-cron:
       command: sleep infinity
-    opensourcewebsite-gitautodeploy-8005:
-      command: sleep infinity

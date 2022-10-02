@@ -3,16 +3,6 @@
 control 'osw files' do
   title 'Verify the configuration files'
 
-  files =
-    case platform[:release]
-    when '18.04'
-      # rubocop:disable Layout/SpaceInsideArrayPercentLiteral,Layout/LineLength,Style/TrailingCommaInArrayLiteral
-      [%w[/etc/git-auto-deploy-opensourcewebsite.org.conf.json             git-auto-deploy       git-auto-deploy       0644],]
-      # rubocop:enable Layout/SpaceInsideArrayPercentLiteral,Layout/LineLength,Style/TrailingCommaInArrayLiteral
-    else
-      []
-    end
-
   # rubocop:disable Layout/SpaceInsideArrayPercentLiteral,Layout/LineLength,Style/TrailingCommaInArrayLiteral
   #    FILENAME                                                         OWNER                 GROUP                 MODE
   files += [

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "webhook",
+    "execute-command": "/www/opensourcewebsite.org/deploy.sh",
+    "command-working-directory": "/www/opensourcewebsite.org/htdocs/",
+    "trigger-rule":
+    {
+      "match":
+      {
+        "type": "value",
+        "value": "refs/heads/master",
+        "parameter":
+        {
+          "source": "payload",
+          "name": "ref"
+        }
+      }
+    }
+]

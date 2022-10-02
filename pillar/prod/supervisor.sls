@@ -9,23 +9,6 @@ supervisor:
   #     - pkg: supervisor
   legacy: false
   programs:
-    opensourcewebsite-gitautodeploy-8005:
-      enabled: true
-      autorestart: 'true'
-      autostart: 'true'
-      command: >-
-        /usr/bin/git-auto-deploy
-        --quiet
-        --config /etc/git-auto-deploy-opensourcewebsite.org.conf.json
-      numprocs: '1'
-      directory: '/www/opensourcewebsite.org'
-      stdout_logfile: >-
-        /var/log/supervisor/git-auto-deploy-opensourcewebsite.org-stdout.log
-      stderr_logfile: >-
-        /var/log/supervisor/git-auto-deploy-opensourcewebsite.org-stdout.log
-      user: 'opensourcewebsite.org'
-      stopsignal: 'KILL'
-
     opensourcewebsite-cron:
       enabled: true
       autorestart: 'true'
