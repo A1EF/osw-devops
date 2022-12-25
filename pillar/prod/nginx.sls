@@ -93,7 +93,7 @@ nginx:
         ssl_session_cache: 'shared:SSL:40m'
         ssl_dhparam: '/etc/nginx/ssl/dhparam.pem'
         ssl_ecdh_curve: 'secp384r1'
-        ssl_early_data: 'on'
+        #ssl_early_data: 'on'
         resolver_timeout: '10s'
         resolver: '8.8.8.8 8.8.4.4 valid=300s'
 
