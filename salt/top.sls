@@ -47,3 +47,4 @@ base:
     # Overrides for Kitchen testing
     - states.setup-certs
     - states.adjust-auditd-conf-for-container
+    - states.nginx_test
