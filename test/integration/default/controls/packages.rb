@@ -5,7 +5,7 @@ control 'osw packages' do
 
   pkgs =
     case platform[:release]
-    when '18.04'
+    when '18.4'
       %w[git-auto-deploy]
     else
       %w[]
@@ -17,9 +17,9 @@ control 'osw packages' do
              software-properties-common python3-software-properties python3-apt
              python3-pycurl certbot python3-certbot-nginx python3-certbot-dns-cloudflare
              python3-pygit2 landscape-common ccze python3.7 apache2-utils php-xdebug
-             php7.4-soap php7.4-bcmath cron auditd audispd-plugins rsyslog acl nginx
-             openssl php7.4-fpm php7.4-zip php7.4-mbstring php7.4-gd php-imagick
-             php7.4-intl php7.4-curl php7.4-mysql php7.4-cli php7.4-xml supervisor
+             php8.1-soap php8.1-bcmath cron auditd audispd-plugins rsyslog acl nginx
+             openssl php8.1-fpm php8.1-zip php8.1-mbstring php8.1-gd php-imagick
+             php8.1-intl php8.1-curl php8.1-mysql php8.1-cli php8.1-xml supervisor
              python3-pip composer logrotate]
 
   pkgs.each do |p|

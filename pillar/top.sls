@@ -12,7 +12,7 @@ base:
   'opensourcewebsite.org or osw-devops-ci':
     - match: compound
     - prod.users
-    - prod.php74
+    - prod.php81
     - prod.nginx
     - prod.supervisor
     - prod.composer
