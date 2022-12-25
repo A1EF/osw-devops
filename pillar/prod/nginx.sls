@@ -1,12 +1,8 @@
 # vim: ft=yaml
 ---
 nginx:
+
   install_from_repo: true
-
-  install_from_phusionpassenger: false
-
-  install_from_ppa: false
-  ppa_version: 'stable'
 
   lookup:
     package: nginx
