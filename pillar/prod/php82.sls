@@ -47,7 +47,7 @@ php:
           PHP:
             engine: 'On'
             expose_php: 'Off'
-            extension_dir: '/usr/lib/php/20220829/'
+            extension_dir: '/usr/lib/php/20210902/'
       conf:
         opts:
           recurse: true
